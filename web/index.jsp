@@ -10,6 +10,8 @@
     <!DOCTYPE html>
     <html>
         <head>
+            <style> @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); </style>
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
             <title>JSP Page</title>
             <link rel="stylesheet" href="css/style.css" />
@@ -42,13 +44,13 @@
                             String id = rs.getString("id");
                         %>    
                         <div class="col">
-                            <div class="card">
+                            <div class="card ">
                                 <img style="width:100%;height:200px;object-fit:cover;" class="card-posisao-img" src="arquivos\<%=rs.getString("imagem")%>" class="card-img-top" alt="...">
                               <div class="card-body">
-                                <h5 class="card-title"><%=rs.getString("nome") %></h5>
-                                <p class="card-text"><%=rs.getString("descricao") %></p>
+                                <h5 class="card-title font-titulo"><%=rs.getString("nome") %></h5>
+                                <p class="card-text font-titulo"><%=rs.getString("descricao") %></p>
                                 <hr>
-                                <button class="btn btn-warning" style="width:50%;">Ver Receita</button>
+                                <button class="btn btn-warning " style="width:50%;"class="font-titulo">Ver Receita</button>
                               </div>
                             </div>
                           </div>
@@ -61,6 +63,7 @@
 
                   </div>
             </section>
+                    <hr>
 
             <jsp:include page="includes/footer.jsp" />
         </body>
